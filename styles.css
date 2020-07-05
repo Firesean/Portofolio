@@ -3,43 +3,65 @@ Style sheet for Sean Morgan's Portfolio Pages
 styles.css
 Author : Sean Morgan
 Date : Oct 12, 2019
+Learn to create : https://www.youtube.com/watch?v=6rxWc-TNIJI
+How I taught myself to code : https://www.youtube.com/watch?v=nmZR_JsLCfg
+12 year old developer : https://www.youtube.com/watch?v=Fkd9TWUtFm0
+Learning to code is not just for coders : https://www.youtube.com/watch?v=MvTSPwftvyo - Code.org
 */
 
-/* Headers */
-header {
-    background: linear-gradient(180deg, rgba(255,165,0,1) 0%, rgba(128,0,0,1) 100%);
-    height : 10em;
-    /* Orange to Maroon */
-}
-/* Classes */
-.fireicon {
-    border-radius : 50%;
-    width: auto;
-    float: left;
+/* Resets */
+* {
+    margin : 1px;
+    padding : 1px;
+    border : 1px;
 }
 
-.sean {
-    display: inline-block;
-    line-height : 2em;
-}
-
-.listedObjects {
-    width : 20%;
-    text-align : center;
-    display : inline-block;
-    clear : both;
-    margin : .4em 60%;
-    text-indent : 0px;
-}
-
+/* Imports */
+/* Lobster */
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+/* Cardo */
+@import url('https://fonts.googleapis.com/css?family=Cardo&display=swap');
 
 /* HTML */
 html {
-    background: radial-gradient(circle, rgba(128,128,128,1) 0%, rgba(0,0,0,1) 100%);
-    /* Maroon to Orange */
+    background: radial-gradient(circle, rgba(128,128,128,1) 0%, rgba(0,0,0,1) 100%); /* Gray to Black */
     font-size : 16px;
 }
 
+/* Body */
+body {
+    font-family: 'Cardo', Times, Times New Roman, serif;
+    background-color : maroon;
+    width : 72%;
+    margin : 0px auto;
+    border : 5px solid black;
+    min-width : 600px;
+    max-width : 1000px;
+}
+
+/* Classes */
+.languages {
+    position : relative;
+    left : 2rem;
+}
+
+.specialtitle {
+    line-height : 2em;
+    background : linear-gradient(rgba(80, 80, 80, 1), rgba(255, 255, 255, 1)); /* Dark Gray to White */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    clear : left;
+}
+
+.noclear {
+    clear : none;
+}
+
+/* Font Families */
+h1 {
+    font-family: 'Lobster', Brush Script MT, Brush Script Std, cursive;
+}
+/* Font Sizes */
 h1 {
     font-size : 3rem;
 }
@@ -49,56 +71,115 @@ h2 {
 }
 
 h3 {
-    font-size : 1.8em;
+    font-size : 1.5em;
 }
 
 h4 {
-    font-size : 1.65em;
+    font-size : 1.4em;
 }
 
 a,p {
     font-size : 1.5em;
 }
 
-h1, h2, h3, h4, p, a{
-    text-decoration : underline;
-    font-weight : 800;
-    color : radial-gradient(circle, rgba(128,128,128,1) 0%, rgba(0,0,0,1) 100%);
-    text-indent: 2rem;
-    float : right;
-    width : 90%;
-}
-
-/* Body */
-body {
-    background-color : maroon;
-    width : 70%;
-    margin : 0px auto;
-    border : 5px solid black;
-    min-width : 600px;
-    max-width : 1000px;
-}
-
-img {
-    display : block;
-    background-color : orange;
-    margin : 0 2%;
-}
-
-p, a{
-    padding : 5px;
-    width : 100%;
-}
-
-/* Under ordered lists */
-
-ul {
-    list-style : none;
-}
 
 /* Footer */
 footer {
     clear : both;
     height : 10em;
-    background: linear-gradient(360deg, rgba(255,165,0,1) 0%, rgba(128,0,0,1) 100%);
+    background: linear-gradient(360deg, rgba(255,165,0,1) 0%, rgba(128,0,0,1) 100%); /* Orange to Maroon */
+}
+
+footer a {
+    position : relative;
+    float : left;
+    left : 1em;
+}
+
+/* Headers */
+header {
+    background: linear-gradient(180deg, rgba(255,165,0,1) 0%, rgba(128,0,0,1) 100%);
+    height : 10em;
+    /* Orange to Maroon */
+}
+
+/* ID */
+#fireicon {
+    border-radius : 50%;
+    width: auto;
+    display : inline-block;
+    float: left;
+}
+
+#sean {
+    font-size : 450%;
+    width : 65%;
+    float : right;
+    position : relative;
+}
+
+/* Images */
+img {
+    display : inline;
+    background-color : orange;
+    margin : 0 2%;
+}
+
+/* Listed Item */
+
+/* Nav */
+nav {
+    background-color : gray;
+    background-image : url("images/ribbon.png");
+    height : 5em;
+    background-size : 100% 100%;
+
+    background-repeat : no-repeat;
+    background-position : center;
+    width : 100%;
+    position : relative;
+    clear : both;
+    left : -.1%;
+    margin : 4px 0px 4px 0px;
+    opacity : .75;
+}
+
+/* Positioning */
+.left {
+    float : left;
+}
+
+.right {
+    float : right;
+}
+
+/* Spacing */
+p, a{
+    padding : 5px;
+}
+
+/* Text Coloring */
+
+a, p, ul, li {
+/* https://www.color-meanings.com/shades-of-orange-color-names-html-hex-rgb-codes/ */
+    background : linear-gradient(360deg, rgba(255, 168, 54, 1) 0%, rgba(211,211,211, 1) 100%); /* Yellow-Orange to light gray */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1, h2, h3, h4{
+    font-weight : 800;
+    color : radial-gradient(circle, rgba(128,128,128,1) 0%, rgba(0,0,0,1) 100%); /* Gray to Black */
+    text-shadow: 5px 10px 12px rgba(0, 0, 0, 0.7), -3px 10px 14px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Unordered List */
+ul {
+    list-style : none;
+    clear : both;
+    float : left;
+    position : relative;
+    left : 10%;
+
 }

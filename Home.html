@@ -4,40 +4,60 @@ Home.html Home page for Sean Morgan's Portfolio page
 Style sheet used is styles.css
 Author : Sean Morgan
 Date : Oct 12, 2019
+https://www.youtube.com/watch?v=2Ar05F-LnWQ - Speeches
 -->
 <html lang="en">
 
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Portfolio for Sean Morgan">
+        <meta name="keywords"
+              content="HTML, CSS, JavaScript, Lua, Sean Morgan, Sean, Morgan, Programming, Software, Game Development, Software                 Engineer, Game Developer, Coding, Python, Java, C++, Cpp, C++, Kotlin, C Sharp, C#, Computer Science, QA Tester,                Tester, Chess, Don't Break the Ice, Dots & Boxes, Minesweeper, Front End, Back End, Creative, Unique">
+        <meta name="author" content="Sean Morgan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"/>
         <title>Sean Morgan's Portfolio</title>
         <link rel="icon" href="images/FirePicture.png">
     </head>
 
     <body>
-        <header>
-            <img class="fireicon" src="images/FirePicture.png" alt="Firesean" width="200" height="200"/>
-            <h1 class="sean"> Sean Morgan </h1>
+        <header class="intro">
+            <img class="left" id="fireicon" src="images/FirePicture.png" alt="Firesean" width="115%" height="115%"/>
+            <h1 class="specialtitle right noclear" id="sean"> Sean Morgan </h1>
         </header>
 
-        <article>
-            <h1> Programing Languages </h1>
-                <div class="Python"></div>
-                    <h2> Python </h2>
-                        <ul>
-                            <li><h3> Projects </h3></li>
-                                <p class="listedObjects"> Chess </p>
-                            <li><h3> Small Codes </h3></li>
-                        </ul>
-                </div>
-                <div class="C Sharp">
-                    <h2><abbr title="C Sharp">C#</abbr></h2>
-                </div>
+        <nav>
+
+        </nav>
+
+        <article class="languages">
+            <ul>
+                <h1 class="specialtitle left"> Programing Languages </h1>
+                <li>
+                    <h2 class="specialtitle left">Python</h2>
+                    <ul>
+                        <li><a href="https://github.com/Firesean/Chess" target="_blank">Chess</a></li>
+                        <li><a href="https://github.com/Firesean/GoogleMe" target="_blank">GoogleMe</a></li>
+                        <li><a href="https://github.com/Firesean/Minesweeper" target="_blank">Minesweeper</a></li>
+                        <li><a href="https://github.com/Firesean/DotGame" target="_blank">Dots & Boxes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 class="specialtitle left">Lua</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.roblox.com/games/39113017/Dont-Break-the-Ice" target="_blank">
+                                Don't Break the Ice</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </article>
 
         <footer>
-            <a href="https://github.com/Firesean" target="_blank"> Github </a>
+            <a href="https://github.com/Firesean" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/sean-morgan-5a4548162/" target="_blank">LinkedIn</a>
+            <a href="mailto:Firesean98@gmail.com?body=Emailing from http://seanmorgan.tech/">Email</a>
         </footer>
     </body>
-
 </html>
