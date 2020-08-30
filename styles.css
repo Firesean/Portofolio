@@ -35,15 +35,11 @@ body {
     width : 72%;
     margin : 0px auto;
     border : 5px solid black;
-    min-width : 600px;
+    min-width : 626px;
     max-width : 1000px;
 }
 
 /* Classes */
-.languages {
-    position : relative;
-    left : 2rem;
-}
 
 .specialtitle {
     line-height : 2em;
@@ -82,7 +78,6 @@ a,p {
     font-size : 1.5em;
 }
 
-
 /* Footer */
 footer {
     clear : both;
@@ -104,11 +99,26 @@ header {
 }
 
 /* ID */
+#candyLand {
+    background-image : url("images/Candyland_Game_Board.jpg");
+    background-repeat : no-repeat;
+    background-size : 100%;
+
+}
+
 #fireicon {
     border-radius : 50%;
     width: auto;
     display : inline-block;
     float: left;
+}
+
+#fireicon:hover {
+    border : 2px solid white;
+}
+
+#game {
+    z-index : -1;
 }
 
 #sean {
@@ -140,11 +150,29 @@ nav {
     position : relative;
     clear : both;
     left : -.1%;
-    margin : 4px 0px 4px 0px;
+    margin : 5% 0px 1% 0px;
     opacity : .75;
 }
 
+nav p {
+    display : inline;
+    font-size : 220%;
+    position : relative;
+    top : 25%;
+    left : 5%;
+}
+
 /* Positioning */
+a:hover{
+    position : relative;
+    top : -5px;
+    text-decoration: underline overline white;
+}
+
+.center {
+    text-align : center;
+}
+
 .left {
     float : left;
 }
@@ -160,7 +188,7 @@ p, a{
 
 /* Text Coloring */
 
-a, p, ul, li {
+a, p {
 /* https://www.color-meanings.com/shades-of-orange-color-names-html-hex-rgb-codes/ */
     background : linear-gradient(360deg, rgba(255, 168, 54, 1) 0%, rgba(211,211,211, 1) 100%); /* Yellow-Orange to light gray */
     -webkit-background-clip: text;
@@ -175,11 +203,11 @@ h1, h2, h3, h4{
 
 
 /* Unordered List */
-ul {
+.projectLanguages, .projectLanguages a {
     list-style : none;
     clear : both;
     float : left;
     position : relative;
     left : 10%;
-
 }
+
